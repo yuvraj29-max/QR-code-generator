@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Dynamic QR Code Generator</h1>
+        <p class="subtitle">Codes expire and regenerate every 3 minutes</p>
+        
+        <form id="qrForm">
+            <input type="text" id="textInput" placeholder="Enter base text or URL" required>
+            <button type="submit">Generate Secure QR</button>
+        </form>
+        
+        <div id="qrCodeContainer">
+            <div id="timerDisplay" class="hidden">Next update in: <span id="countdown">03:00</span></div>
+            <img id="qrCodeImage" class="hidden" src="" alt="Dynamic QR Code">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
